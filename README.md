@@ -81,3 +81,7 @@ http://localhost:5173
 
 ⚠️ Furthermore, if you received a 404 error on Tomcat, ensure WEB-INF/web.xml is properly set up
 
+
+## 🤖 AI Assistance
+
+AI tools supported this project, helping generate ideas, solve coding issues, and improve the overall development process.
