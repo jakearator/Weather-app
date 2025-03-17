@@ -36,7 +36,7 @@ A simple weather application that allows users to check real-time weather condit
 git clone https://github.com/jakearator/Weather-app.git
 cd Weather-app
 
-2️⃣ Backend Setup (Java Servlet + Tomcat)
+
 
 
 
