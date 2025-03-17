@@ -35,8 +35,3 @@ A simple weather application that allows users to check real-time weather condit
 ```sh
 git clone https://github.com/jakearator/Weather-app.git
 cd Weather-app
-
-
-
-
-
