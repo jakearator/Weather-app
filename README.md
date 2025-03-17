@@ -25,7 +25,8 @@ A simple weather application that allows users to check real-time weather condit
 
 > **⚠️ Note:** The backend is a work in progress. I initially set it up manually without Maven, which has caused some challenges in integrating it with the front end. I plan to refactor and improve the backend for better communication between client and server.
 
-## 📸 Screenshot (of the functional frontend)
+## 📸 Screenshots
+![Weather App Screenshot](frontend/public/screenshots/weather-app.png)
 
 
 ## 📦 Installation & Setup
