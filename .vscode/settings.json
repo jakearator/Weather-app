@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "Backend/src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "Backend/lib/javax.servlet-api-4.0.1.jar",
+        "lib/**/*.jar"   // If you also want to reference other jars in the main lib folder
+    ]
+}
