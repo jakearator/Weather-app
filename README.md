@@ -18,7 +18,7 @@ A simple weather application that allows users to check real-time weather condit
 - HTML, CSS (Styled with basic styles)
 - Fetch API for data retrieval
 
-### **Backend (Work in Progress)**
+### **Backend **
 - Java (Servlets)
 - Tomcat Server
 - OpenWeather API integration
