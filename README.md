@@ -1,8 +1,8 @@
-# Weather-app 🌦
+# Weather-app 
 
 A simple weather application that allows users to check real-time weather conditions by entering a city name. It fetches data from the **OpenWeather API** and displays details like **temperature, wind speed, humidity, and weather conditions**.
 
-## 🚀 Features
+## Features
 
 - 🌍 Search for weather by city name
 - 🌡️ Display current temperature in Celsius
@@ -11,7 +11,7 @@ A simple weather application that allows users to check real-time weather condit
 - 🎨 Clean and responsive UI
 - 🔗 API integration with OpenWeather
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 - React (Vite)
@@ -25,11 +25,11 @@ A simple weather application that allows users to check real-time weather condit
 
 > **⚠️ Note:** The backend is a work in progress. I initially set it up manually without Maven, which has caused some challenges in integrating it with the front end. I plan to refactor and improve the backend for better communication between client and server.
 
-## 📸 Screenshots
+## Screenshots
 ![Weather App Screenshot](frontend/public/screenshots/Screenshot%202025-03-16%20234101.png)
 
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
@@ -82,6 +82,6 @@ http://localhost:5173
 ⚠️ Furthermore, if you received a 404 error on Tomcat, ensure WEB-INF/web.xml is properly set up
 
 
-## 🤖 AI Assistance
+## AI Assistance
 
 AI tools supported this project, helping generate ideas, solve coding issues, and improve the overall development process.
