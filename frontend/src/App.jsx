@@ -51,7 +51,6 @@ function App() {
 
       {weather && (
         <div className="weather-info">
-          <h2>{weather.name}</h2>
           <p>🌡️ {weather.main?.temp}°C</p>
           <p>💨 Wind Speed: {weather.wind?.speed} m/s</p>
           <p>🌤️ Condition: {weather.weather?.[0]?.description}</p>
