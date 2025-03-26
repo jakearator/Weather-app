@@ -11,19 +11,21 @@ function App() {
       setError("Please enter a city name.");
       return;
     }
-    setError(null); // Reset error message
+
+    setError(null);        // Clear old errors
+    setWeather(null);      // Clear old weather
 
     try {
-      console.log("Fetching weather for:", city);  // Debugging Log
+      console.log("Fetching weather for:", city);  // Debug log
 
       const response = await fetch(`http://localhost:8080/weatherapp/WeatherServlet?city=${city}`);
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
       const data = await response.json();
-      console.log("Weather Data:", data);  // Debugging Log
+      console.log("Weather Data:", data);
+
+      if (!response.ok || data.cod !== 200) {
+        setError("City not found. Please enter a valid location.");
+        return;
+      }
 
       setWeather(data);
     } catch (error) {
@@ -36,7 +38,7 @@ function App() {
     <div className="container">
       <h1 className="weather-heading">
         🌤️ What's the weather today at 
-      </h1> {/* Sun emoji with text */}
+      </h1>
       <input 
         type="text" 
         placeholder="Enter city" 
@@ -50,10 +52,10 @@ function App() {
       {weather && (
         <div className="weather-info">
           <h2>{weather.name}</h2>
-          <p>🌡️ {weather.main.temp}°C</p>
-          <p>💨 Wind Speed: {weather.wind.speed} m/s</p>
-          <p>🌤️ Condition: {weather.weather[0].description}</p>
-          <p>💧 Humidity: {weather.main.humidity}%</p>
+          <p>🌡️ {weather.main?.temp}°C</p>
+          <p>💨 Wind Speed: {weather.wind?.speed} m/s</p>
+          <p>🌤️ Condition: {weather.weather?.[0]?.description}</p>
+          <p>💧 Humidity: {weather.main?.humidity}%</p>
         </div>
       )}
     </div>

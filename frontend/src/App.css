@@ -46,6 +46,7 @@ button {
 .weather-info {
   margin-top: 20px;
   font-size: 18px;
+  color: #000; /* Ensures text is visible */
 }
 
 .error-message {
