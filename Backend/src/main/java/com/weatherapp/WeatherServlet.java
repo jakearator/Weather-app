@@ -22,9 +22,15 @@ public class WeatherServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         String city = request.getParameter("city");
+        String units = request.getParameter("units"); // "metric" or "imperial"
+
         if (city == null || city.isEmpty()) {
             response.getWriter().write("{\"error\": \"City parameter is missing\"}");
             return;
+        }
+
+        if (units == null || units.isEmpty()) {
+            units = "metric"; // Default to Celsius
         }
 
         String apiKey = System.getenv("OPENWEATHER_API_KEY");
@@ -35,7 +41,8 @@ public class WeatherServlet extends HttpServlet {
 
         try {
             String encodedCity = java.net.URLEncoder.encode(city, java.nio.charset.StandardCharsets.UTF_8);
-            String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + encodedCity + "&appid=" + apiKey + "&units=metric";
+            String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" 
+                          + encodedCity + "&appid=" + apiKey + "&units=" + units;
 
             URI uri = new URI(apiUrl);
             HttpURLConnection conn = (HttpURLConnection) uri.toURL().openConnection();
