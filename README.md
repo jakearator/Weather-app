@@ -4,12 +4,12 @@ A simple weather application that allows users to check real-time weather condit
 
 ## Features
 
-- 🌍 Search for weather by city name
-- 🌡️ Display current temperature in Celsius
-- 💨 Show wind speed and humidity
-- ☀️ Weather condition descriptions (e.g., sunny, cloudy, rainy)
-- 🎨 Clean and responsive UI
-- 🔗 API integration with OpenWeather
+-  Search for weather by city name
+-  Display current temperature in Celsius
+-  Show wind speed and humidity
+-  Weather condition descriptions (e.g., sunny, cloudy, rainy)
+-  Clean and responsive UI
+-  API integration with OpenWeather
 
 ## Tech Stack
 
@@ -23,7 +23,7 @@ A simple weather application that allows users to check real-time weather condit
 - Tomcat Server
 - OpenWeather API integration
 
-> **⚠️ Note:** The backend is a work in progress. I initially set it up manually without Maven, which has caused some challenges in integrating it with the front end. I plan to refactor and improve the backend for better communication between client and server.
+> ** Note:** The backend is a work in progress. I initially set it up manually without Maven, which has caused some challenges in integrating it with the front end. I plan to refactor and improve the backend for better communication between client and server.
 
 ## Screenshots
 ![Weather App Screenshot](frontend/public/screenshots/Screenshot%202025-04-05%20172543.png)
@@ -31,14 +31,14 @@ A simple weather application that allows users to check real-time weather condit
 
 ## Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 
 git clone https://github.com/jakearator/Weather-app.git
 cd Weather-app
 
-### 2️⃣ Backend Setup (Java Servlet + Tomcat)
+### 2️ Backend Setup (Java Servlet + Tomcat)
 
-⚠️ Prerequisites:
+⚠ Prerequisites:
 - Java JDK (17 or later)
 - Apache Tomcat (10+) (I specifically used 10)
 - OpenWeather API Key (Need to sign up for OpenWeather and get your **OWN** API key there
@@ -50,8 +50,8 @@ cd Backend
 javac -cp "lib/javax.servlet-api-4.0.1.jar;." -d bin src/*.java
 
 # Deploy the app to Tomcat:
- 1️⃣ Copy the Backend folder into Tomcat's webapps/ directory
- 2️⃣ Ensure web.xml is correctly configured inside WEB-INF/
+ 1️ Copy the Backend folder into Tomcat's webapps/ directory
+ 2️ Ensure web.xml is correctly configured inside WEB-INF/
 
 # Start Tomcat
 C:\Apache\Tomcat\apache-tomcat-10.1.39\bin\startup.bat
@@ -59,9 +59,9 @@ C:\Apache\Tomcat\apache-tomcat-10.1.39\bin\startup.bat
 # Access the backend in your browser:
 http://localhost:8080/weatherapp/WeatherServlet?city=New%20York
 
-### 3️⃣ Frontend Setup (React) 
+### 3️ Frontend Setup (React) 
 
-⚠️ Prerequisites:
+⚠ Prerequisites:
 - Node.js (16+)
 - npm (comes with Node.js)
 
@@ -77,9 +77,9 @@ npm run dev
 # Open the frontend in your browser:
 http://localhost:5173
 
-⚠️ If the backend is not sending responses to the frontend, check the correct API URL endpoints
+⚠ If the backend is not sending responses to the frontend, check the correct API URL endpoints
 
-⚠️ Furthermore, if you received a 404 error on Tomcat, ensure WEB-INF/web.xml is properly set up
+⚠️Furthermore, if you received a 404 error on Tomcat, ensure WEB-INF/web.xml is properly set up
 
 
 ## AI Assistance
